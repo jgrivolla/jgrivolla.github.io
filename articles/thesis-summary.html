@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Jens Grivolla</title>
+		
+		<style type="text/css">
+			body {font: 9pt "Verdana, Arial, Helvetica, sans-serif"}
+			table{font-size: inherit;
+				font-family: inherit;}
+			.sec {color: #990000;
+				font-weight: bold;
+				margin-top: 8px;
+				margin-bottom: 2px;}
+			.date {font-weight: bold;
+				vertical-align: text-top;
+				width: 100px}
+			.activity {font-weight: bold;}
+			.it {font-style: italic;}
+			.mytable{font-size: inherit;
+				font-family: inherit;}
+			.mytd{vertical-align: text-top;}
+			@media print {
+			.nobreak{page-break-inside: avoid;}
+			table{page-break-inside: avoid;}
+			td{page-break-inside: avoid;}
+			}
+		</style>				
+	</head>
+	
+	<body>
+		<table width="650" border="0" cellspacing="0" cellpadding="0" align="center">
+			<tr>
+				<td>
+				
+<div class="sec">Automatic Learning, Decision, and Dialogue in Information Retrieval</div>
+
+<p>Our research project was centered around the subject of information retrieval, with a focus on those queries that are particularly difficult to handle for current retrieval systems.</p>
+
+<p>In the application and evaluation settings we were concerned with, a user expresses his information need as a natural language query.  There are different approaches for treating those queries, but current systems typically use a single approach for all queries, without taking into account the specific properties of each query.  However, it has been shown (and can easily be confirmed experimentally) that the performance of one strategy relative to another can vary greatly depending on the query.  No one system is consistently better than others for all queries.  One can also note that all optimizations of a system that increase overall performance, such as query expansion techniques, will fail in some cases, degrading the performances on those queries.</p>
+
+<p>We have approached this problem by proposing methods that will permit to automatically identify those queries that will pose particular difficulties to the retrieval system, in order to allow for a specific treatment.  This research topic was very new and barely starting to be explored at the beginning of my work, but has received much attention these last years.</p>
+
+<p>In my doctorate thesis, a large number of performance indicators, with an in-depth evaluation and comparison of their predictive qualities are presented.  This includes numerous measures relative to the query itself, describing its specificity and its ambiguity.  These measures are based on semantical and statistical traits of the terms contained in the query (for example synonymy, hyponymy, hyperonymy, occurrence of specialized technical vocabularies, etc.).  Other measures are based on the retrieval results.  This includes in particular measures of homogeneity of the set of retrieved documents (mean cosine similarity and entropy), as well as information taken from the retrieval process, such as document-query similarities.</p>
+
+<p>We have thus developed a certain number of quality predictor functions that obtain results comparable to those published recently by other research teams.  However, the ability of individual predictors to accurately classify queries by their level of difficulty remains rather limited.</p>
+
+<p>The major particularity and originality of our work lies in the combination of those different measures.  Using methods of automatic classification with corpus-based training, we have been able to obtain quite reliable predictions, on the basis of measures that individually are far less discriminant.  In particular, classification methods based on support vector models (SVM) or those using decision trees have proven very effective for this task.</p>
+
+<p>We have evaluated our methods automatically estimating the quality of the results returned by different retrieval systems, based on the ad-hoc task of the TREC 8 campaign.  For some of the systems having participated in the campaign, we obtain a prediction accuracy of up to 86% (for a binary easy/hard decision).</p>
+
+<p>We have also adapted our approach to other application settings, with very encouraging results.  We have thus developed a method for the selective application of query expansion techniques, as well as the selection of the most appropriate retrieval model for each query.</p>
+
+<p>The robustness of our approach is also demonstrated by the good performances obtained on a french language corpus, taken from the EQUER question answering evaluation campaign, using the results obtained from a system developed at the Laboratoire Informatique d'Avignon (LIA).</p>
+
+</td></tr></table></body>
+</html>
