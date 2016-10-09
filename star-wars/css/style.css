@@ -72,6 +72,10 @@ body {
   backface-visibility: hidden;
 }
 
+.center {
+  text-align: center;
+}
+
 @-webkit-keyframes intro {
   0% {
     opacity: 0;
